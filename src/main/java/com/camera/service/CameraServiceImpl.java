@@ -27,7 +27,7 @@ public class CameraServiceImpl implements CameraService{
 
     @Override
     public Camera createCamera(Camera newCamera) {
-        System.out.println("creating...");
+        newCamera.setId(null);
         return cameraRepository.save(newCamera);
     }
 
