@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "5f0d3bb7-45c1-4871-a3a0-52c8784e950e",
+		"name": "Camera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14804362"
+	},
+	"item": [
+		{
+			"name": "List Cameras",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/camera",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"camera"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Camera by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/camera/632b5810a3e6ce769054ce28",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"camera",
+						"632b5810a3e6ce769054ce28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create camera",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"camera3\",\r\n    \"model\": \"model3\",\r\n    \"resolution\": \"1098x720\",\r\n    \"ip\": {\r\n        \"octetOne\": \"123\",\r\n        \"octetTwo\": \"123\",\r\n        \"octetThree\": \"123\",\r\n        \"octetFour\": \"125\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/camera",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"camera"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update camera",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"camera6\",\r\n    \"model\": \"model3\",\r\n    \"resolution\": \"1098x720\",\r\n    \"ip\": {\r\n        \"octetOne\": \"123\",\r\n        \"octetTwo\": \"123\",\r\n        \"octetThree\": \"123\",\r\n        \"octetFour\": \"125\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/camera/632de9d8b0ae426ca5b5d127",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"camera",
+						"632de9d8b0ae426ca5b5d127"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Camera by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/camera/632b5810a3e6ce769054ce28",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"camera",
+						"632b5810a3e6ce769054ce28"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
